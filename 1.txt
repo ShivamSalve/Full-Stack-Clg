@@ -1,0 +1,8 @@
+cd backend
+node seed.js  # Run once to seed the 4 dummy courses
+npm install nodemon -g # (Optional) to install nodemon globally if you haven't
+npx nodemon index.js
+
+
+cd frontend
+npm run dev
