@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; background: #f0f2f5; }
+        .search-container { margin-bottom: 30px; }
+        input { padding: 12px; border-radius: 5px; border: 1px solid #ccc; width: 250px; font-size: 16px; }
+        button { padding: 12px 24px; border-radius: 5px; border: none; background: #007bff; color: white; cursor: pointer; font-weight: bold; font-size: 16px; }
+        button:hover { background: #0056b3; }
+        .chart-container { width: 90%; max-width: 800px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h2 { color: #333; margin-top: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Enter city (e.g., London)">
+        <button onclick="getWeatherData()">Search Weather</button>
+    </div>
+
+    <div class="chart-container">
+        <h2 id="cityNameDisplay">Forecast Results</h2>
+        <canvas id="weatherChart"></canvas>
+    </div>
+
+    <script src="js1.js"></script>
+</body>
+</html>
