@@ -23,7 +23,7 @@ app.use('/api/courses', courseRoutes);
 app.use('/api/reviews', reviewRoutes);
 
 app.get('/', (req, res) => {
-  res.send('CampusEcho API is running...');
+  res.send('CampusEcho API is running..');
 });
 
 const PORT = process.env.PORT || 5000;
